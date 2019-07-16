@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý học sinh</title>
+
+
+</head>
+<style>
+    table{
+        margin-top: 20px;
+    }
+    input{
+        display: block;
+    }
+   #tableInfo{
+       position: absolute;
+       margin-top: 0px;
+       color: white;
+       background-color: aquamarine;
+   }
+    #dataTable{
+        position: relative;
+        margin-left: 25%;
+        margin-top: 40px;
+        color: saddlebrown;
+        background-color: bisque;
+    }
+    h1{
+        margin-left: 600px;
+        color: darkgoldenrod;
+    }
+    p{
+        color: #222222;
+    }
+   #add{
+       width: 70px;
+       height: 30px;
+   }
+</style>
+<body>
+<table id="tableInfo">
+    <tr>
+        <td><p> Mã học sinh: </p></td>
+        <td><input id="maSv"  type="number"></td>
+    </tr>
+    <tr>
+        <td><p> Tên học sinh: </p></td>
+        <td><input id="name"  type="text"></td>
+    </tr>
+    <tr>
+        <td><p> Tuổi học sinh: </p></td>
+        <td><input id="age"  type="number"></td>
+    </tr>
+    <tr>
+        <td><p> Điểm Toán: </p></td>
+        <td><input id="math"  type="number" min="0" max="10" width="100px"></td>
+    </tr>
+    <tr>
+        <td><p> Điểm Lý: </p></td>
+        <td><input id="physical"  type="number" min="0" max="10"></td>
+    </tr>
+    <tr>
+        <td><p> Điểm Hóa: </p></td>
+        <td><input id="chemistry"  type="number"  min="0" max="10"></td>
+    </tr>
+    <tr>
+        <td><button id="add" onclick="manager.addStudent();" type="button"> Add</button></td>
+
+    </tr>
+</table>
+
+<h1> Quản lý điểm học sinh</h1>
+<table border="1" id="dataTable" width=" 800px">
+    <tr>
+        <td>Mã sinh viên</td>
+        <td>Họ và tên</td>
+        <td>Ngày sinh</td>
+        <td>Điểm toán</td>
+        <td>Điểm lý</td>
+        <td>Điểm hóa</td>
+        <td>Điểm TB</td>
+        <td>Xếp loại</td>
+    </tr>
+</table>
+
+<script src="Student.js"></script>
+</body>
+</html>
